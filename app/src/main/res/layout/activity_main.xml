@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-        <LinearLayout
-        xmlns:android = "http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-                android:id="@+id/txtResultado"
-                android:text="0"
-                android:textSize="32sp"
-                android:gravity="end"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                <GridLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:columnCount="4" >
-                    
-                    <Button android:text="1"
-                        android:onClick="ClicarNumero"/>
-                    <Button
-                        android:layout_width=""
-                        android:layout_height=""    
-                            
-                            
-                            
-                            
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtResultado"
+        android:text="0"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+        <Button android:text="1" android:onClick="clicarNumero"/>
+        <Button android:text="2" android:onClick="clicarNumero"/>
+        <Button android:text="3" android:onClick="clicarNumero"/>
+        <Button android:text="+" android:onClick="clicarOperacao"/>
+        <Button android:text="4" android:onClick="clicarNumero"/>
+        <Button android:text="5" android:onClick="clicarNumero"/>
+        <Button android:text="6" android:onClick="clicarNumero"/>
+        <Button android:text="-" android:onClick="clicarOperacao"/>
+        <Button android:text="7" android:onClick="clicarNumero"/>
+        <Button android:text="8" android:onClick="clicarNumero"/>
+        <Button android:text="9" android:onClick="clicarNumero"/>
+        <Button android:text="×" android:onClick="clicarOperacao"/>
+        <Button android:text="0" android:onClick="clicarNumero"/>
+        <Button android:text="C" android:onClick="limpar"/>
+        <Button android:text="=" android:onClick="calcular"/>
+        <Button android:text="÷" android:onClick="clicarOperacao"/>
+
+    </GridLayout>
+
+</LinearLayout>
