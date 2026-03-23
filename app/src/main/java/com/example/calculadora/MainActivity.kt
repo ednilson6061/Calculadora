@@ -27,7 +27,30 @@ class MainActivity : AppCompatActivity(){
     fun clicarOperacao(view: View) {
         val botao = view as Button
         operacao = botao.text.toString()
-        numero1 = valorAtual.toDouble()
+        if (valorAtual.isNotEmpty()) {
+            numero1 = valorAtual.toDouble()
+        }
+        operacao = botao.text.toString()
         valorAtual = ""
     }
+    fun calcular (view: View) {
+        val numero2 = valorAtual.toDouble()
+        var resultado = 0.0
+
+        when (operacao) {
+            "+" -> resultado = numero1 + numero2
+            "-" -> resultado = numero1 - numero2
+            "×" -> resultado = numero1 * numero2
+            "÷" -> resultado = numero1 / numero2
+        }
+        txtResultado.text = resultado.toString()
+        valorAtual = resultado.toString()
+    }
+    fun limpar(view: View) {
+        txtResultado.text = "0"
+        valorAtual = ""
+        numero1 = 0.0
+        operacao = ""
+    }
+
 }
