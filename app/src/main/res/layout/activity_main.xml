@@ -29,9 +29,10 @@
         <Button android:text="9" android:onClick="clicarNumero"/>
         <Button android:text="×" android:onClick="clicarOperacao"/>
         <Button android:text="0" android:onClick="clicarNumero"/>
-        <Button android:text="C" android:onClick="limpar"/>
+        <Button android:text="C" android:onClick="limparTudo"/>
         <Button android:text="=" android:onClick="calcular"/>
         <Button android:text="÷" android:onClick="clicarOperacao"/>
+        <Button android:text="⌫" android:onClick="limpar"/>
 
     </GridLayout>
 

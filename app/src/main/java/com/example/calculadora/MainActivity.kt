@@ -46,11 +46,16 @@ class MainActivity : AppCompatActivity(){
         txtResultado.text = resultado.toString()
         valorAtual = resultado.toString()
     }
-    fun limpar(view: View) {
-        txtResultado.text = "0"
+    fun limpar (view: View) {
+        if (valorAtual.isNotEmpty()){
+            valorAtual = valorAtual.dropLast(1)
+            txtResultado.text = if (valorAtual.isEmpty())
+    "0"    else valorAtual
+        }
+    fun limparTudo (view: View) {
         valorAtual = ""
         numero1 = 0.0
-        operacao = ""
+        operacao = ""}
     }
 
 }
