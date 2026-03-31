@@ -1,38 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
     <TextView
         android:id="@+id/txtResultado"
-        android:text="0"
-        android:textSize="32sp"
-        android:gravity="end"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="32sp" />
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="4">
-        <Button android:text="1" android:onClick="clicarNumero"/>
-        <Button android:text="2" android:onClick="clicarNumero"/>
-        <Button android:text="3" android:onClick="clicarNumero"/>
-        <Button android:text="+" android:onClick="clicarOperacao"/>
-        <Button android:text="4" android:onClick="clicarNumero"/>
-        <Button android:text="5" android:onClick="clicarNumero"/>
-        <Button android:text="6" android:onClick="clicarNumero"/>
-        <Button android:text="-" android:onClick="clicarOperacao"/>
-        <Button android:text="7" android:onClick="clicarNumero"/>
-        <Button android:text="8" android:onClick="clicarNumero"/>
-        <Button android:text="9" android:onClick="clicarNumero"/>
-        <Button android:text="×" android:onClick="clicarOperacao"/>
-        <Button android:text="0" android:onClick="clicarNumero"/>
-        <Button android:text="C" android:onClick="limparTudo"/>
-        <Button android:text="=" android:onClick="calcular"/>
-        <Button android:text="÷" android:onClick="clicarOperacao"/>
-        <Button android:text="⌫" android:onClick="limpar"/>
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="1" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="2" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="3" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarOperacao"
+            android:text="+" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="4" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="5" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="6" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarOperacao"
+            android:text="-" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="7" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="8" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="9" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarOperacao"
+            android:text="×" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarNumero"
+            android:text="0" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="limparTudo"
+            android:text="C" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="calcular"
+            android:text="=" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="clicarOperacao"
+            android:text="÷" />
+
+        <Button
+            android:backgroundTint="@color/black"
+            android:onClick="limpar"
+            android:text="⌫" />
 
     </GridLayout>
 
